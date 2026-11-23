@@ -1,0 +1,38 @@
+/* Single source of literals. No colour literal exists anywhere else in the project
+   (favicon.svg excepted: it is traced from the asset pixels).
+   PALETTE PROVENANCE — sampled with scripts/prep-assets.py from
+   brand/LOGO PLAYBLOCK PNG...png (RGBA, colortype 6, 2000x2000):
+     ink        mean of opaque wordmark pixels            -> rgb(14,14,14)
+     green      mean of bright hexagon ring pixels        -> rgb(51,183,51)
+     green-deep mean of cube face pixels                  -> rgb(2,73,22)
+     paper      mean of background corner of the opaque
+                sibling brand/LOGO PLAYBLOCK PNG.png      -> rgb(254,254,254)
+   Every other tone is derived with color-mix() from these four. */
+:root{
+  --ink:#0e0e0e;
+  --paper:#fefefe;
+  --green:#33b733;
+  --green-deep:#024916;
+
+  --color-accent:var(--green);
+  --green-soft:color-mix(in srgb,var(--green) 16%,var(--paper));
+  --green-wash:color-mix(in srgb,var(--green) 7%,var(--paper));
+  --muted:color-mix(in srgb,var(--ink) 62%,var(--paper));
+  --line-soft:color-mix(in srgb,var(--ink) 13%,transparent);
+  --ink-soft:color-mix(in srgb,var(--ink) 8%,var(--paper));
+
+  --font-display:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;
+  --font-sans:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+  /* measured on the reference stylesheet */
+  --bw:1.5px;
+  --r-plate:6px; --r-tag:3px; --r-tile:4px; --r-card:14px 3px; --r-console:4px 18px;
+  --sh-s:2px 2px 0 var(--ink); --sh-m:3px 3px 0 var(--ink); --sh-l:6px 6px 0 var(--ink); --sh-xl:12px 12px 0 var(--ink);
+  --brandbar-h:60px; --tabs-h:44px; --pad-x:20px; --max:1600px; --shell:1180px;
+  --tap:44px;
+  --t-fast:.1s; --t-mid:.15s; --t-in:.4s; --pulse:1.6s; --ticker:48s;
+  --ease-out:cubic-bezier(.2,.7,.2,1);
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:40px; --sp-7:64px; --sp-8:96px;
+}
+@media (max-width:767px){ :root{ --brandbar-h:58px; --pad-x:12px; } }

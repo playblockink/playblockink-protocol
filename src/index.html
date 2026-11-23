@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Playblock | Snap. Stack. Play.</title>
+<meta name="description" content="Playblock is a Solana meme token shaped like a toy brick. Follow the live board of boosted coins, our own brick pinned up top.">
+<meta property="og:title" content="Playblock | Snap. Stack. Play.">
+<meta property="og:description" content="A toy-brick token for Solana, plus a live board of the loudest coins.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://playblock.ink/">
+<meta property="og:image" content="https://playblock.ink/assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="preload" as="image" href="./assets/logo-sm.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="./styles/tokens.css">
+<link rel="stylesheet" href="./styles/main.css">
+<script type="application/json" id="register">{{REGISTER_JSON}}</script>
+<script type="module" src="./js/main.js"></script>
+</head>
+<body id="top">
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="site-header">
+  <div class="site-brandbar">
+    <a class="site-brand" href="#top" aria-label="Playblock home">
+      <img class="site-logo" src="./assets/logo-sm.png" alt="Playblock" width="480" height="122">
+      <span class="brand-tag">Play<br>Block</span>
+    </a>
+    <div class="site-actions">{{SOCIAL_X}}{{SOCIAL_GH}}</div>
+  </div>
+  {{CA_BLOCK}}
+</header>
+<nav class="site-tabs" aria-label="Sections">
+  <div class="site-tabs-inner">
+    <a class="site-tab is-active" href="#market"><span class="site-tab-num">01</span>Board</a>
+    <a class="site-tab" href="#set"><span class="site-tab-num">02</span>Set</a>
+    <a class="site-tab" href="#roadmap"><span class="site-tab-num">03</span>Plan</a>
+    <a class="site-tab" href="#about"><span class="site-tab-num">04</span>About</a>
+    <span class="site-tabs-note">BRICK BY BRICK</span>
+  </div>
+</nav>
+
+<main>
+  <section class="stage" aria-labelledby="h1" data-parallax>
+    <div class="mesh" aria-hidden="true">
+      <i class="blob b1" data-depth="0.4"></i><i class="blob b2" data-depth="0.7"></i><i class="blob b3" data-depth="0.3"></i>
+      <i class="grid"></i>
+    </div>
+    <div class="shell hero">
+      <div class="hero-copy">
+        <div class="topline" data-reveal>
+          <span class="live-tag"><i class="dot"></i>LIVE · SOLANA</span>
+          <span>PLAYBLOCK.INK</span>
+        </div>
+        <img class="hero-logo" data-reveal src="./assets/logo.png" alt="Playblock logo" width="960" height="244">
+        <h1 id="h1" class="hero-line" data-reveal>Snap. Stack. Play.</h1>
+        <p class="hero-deck" data-reveal>A plastic-brick idea riding a fast chain. One coin, shaped like a toy, made to be passed around, piled up and shown off.</p>
+        <div class="sub" data-reveal><i class="sq"></i>BRICK BY BRICK · SOLANA</div>
+        <div class="actions" data-reveal>
+          <a class="cta" href="#market">SEE THE BOARD <span aria-hidden="true">&rarr;</span></a>
+          <a class="ghost" href="#set">HOW IT FITS</a>
+        </div>
+      </div>
+      <div class="toybox spot" data-reveal>
+        <div class="box-label"><span>PLAYBLOCK / BRICK</span><b>01</b></div>
+        <div class="scene">
+          <i class="toy toy-a" data-depth="1.2"></i>
+          <i class="toy toy-b" data-depth="1.8"></i>
+          <i class="toy toy-c" data-depth="0.9"></i>
+          <div class="layer" data-depth="0.5"><i class="platform"></i></div>
+          <img class="emblem" data-depth="1.4" src="./assets/logo-cube.png" alt="" width="256" height="270">
+          <span class="sticker sticker-a" data-depth="2">SOL</span>
+          <span class="sticker sticker-b" data-depth="2.4">PLAY</span>
+          <span class="chip" data-depth="1.6"><img src="./assets/logo-cube.png" alt="" width="28" height="30">PB-001</span>
+        </div>
+        <div class="box-label bottom"><span>PRESS TO CLICK IN</span><span>&#9632;&#9632;&#9632;</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker-wrap" aria-label="Boosted tokens ticker">
+    <div class="ticker" id="ticker">
+      <div class="tk-group"><span class="tk skel"></span><span class="tk skel"></span><span class="tk skel"></span><span class="tk skel"></span><span class="tk skel"></span><span class="tk skel"></span><span class="tk skel"></span><span class="tk skel"></span></div>
+    </div>
+  </div>
+
+  <section id="market" class="section" aria-labelledby="h-market">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="eyebrow">THE BOARD</p>
+          <h2 id="h-market">Solana's loudest</h2>
+          <p class="sec-sub">Ten boosted tokens pulled from the public feed. Slot one is held for the brick.</p>
+        </div>
+        <div class="pill" id="market-pill" data-state="live"><i class="dot"></i><span id="market-pill-text">Connecting</span></div>
+      </div>
+      <div class="board plate" role="table" aria-label="Market board" data-reveal>
+        <div class="board-head" role="row">
+          <span role="columnheader">#</span><span role="columnheader">Token</span><span role="columnheader">Price</span><span role="columnheader">24h</span><span role="columnheader">Volume</span><span role="columnheader">Liquidity</span>
+        </div>
+        <div id="own-slot" role="rowgroup"></div>
+        <div id="rows" role="rowgroup">
+          <div class="row skel" style="--i:0"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:1"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:2"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:3"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:4"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:5"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:6"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:7"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+          <div class="row skel" style="--i:8"><span class="bar s"></span><span class="bar l"></span><span class="bar m"></span><span class="bar s"></span><span class="bar m"></span><span class="bar m"></span></div>
+        </div>
+      </div>
+      <p class="note" id="board-note" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section id="set" class="section tint" aria-labelledby="h-set">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="eyebrow">THE BRICK SET</p>
+          <h2 id="h-set">Four studs, one idea</h2>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card plate spot" data-reveal><span class="card-n">001</span><h3>Pocket size</h3><p>A coin you can explain in one breath and carry anywhere.</p></article>
+        <article class="card plate spot" data-reveal><span class="card-n">002</span><h3>Stackable</h3><p>Each holder adds a piece. The pile only makes sense when it is shared.</p></article>
+        <article class="card plate spot" data-reveal><span class="card-n">003</span><h3>Open book</h3><p>Public chain, public feed, public numbers. Nothing hides behind a curtain.</p></article>
+        <article class="card plate spot" data-reveal><span class="card-n">004</span><h3>Made to play</h3><p>Humor first, charts second. Serious about fun, relaxed about the rest.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="section" aria-labelledby="h-plan">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="eyebrow">THE BUILD PLAN</p>
+          <h2 id="h-plan">Four layers up</h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="step plate spot" data-reveal><span class="step-n">P1</span><div><h3>Base plate</h3><p>Brand, site and the first crowd of fellow brick fans.</p></div></li>
+        <li class="step plate spot" data-reveal><span class="step-n">P2</span><div><h3>First layer</h3><p>The token goes out and slot one lights up on that board.</p></div></li>
+        <li class="step plate spot" data-reveal><span class="step-n">P3</span><div><h3>The tower</h3><p>Tools, collabs and louder community moves.</p></div></li>
+        <li class="step plate spot" data-reveal><span class="step-n">P4</span><div><h3>Playground</h3><p>Small games and toys that put the brick to use.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="about" class="section tint" aria-labelledby="h-about">
+    <div class="shell narrow">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="eyebrow">THE CREW</p>
+          <h2 id="h-about">Small crew, big bricks</h2>
+        </div>
+      </div>
+      <div class="plate spot about" data-reveal>
+        <p>Names and links will appear here once they are confirmed. Until then, every social icon above stays dim on purpose.</p>
+        <p>Prices come from third-party feeds and can lag. Nothing on this page is financial advice.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <img src="./assets/logo-sm.png" alt="Playblock" width="480" height="122" class="foot-logo">
+    <span>playblock.ink</span>
+    <span>Chain: Solana</span>
+  </div>
+</footer>
+</body>
+</html>

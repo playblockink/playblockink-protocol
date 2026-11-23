@@ -1,0 +1,14 @@
+{
+  "project": { "state": "stated", "name": "Playblock", "domain": "playblock.ink" },
+  "chain": { "state": "stated", "value": "solana", "rpc": "https://solana-rpc.publicnode.com" },
+  "ca": { "state": "stated", "value": "So11111111111111111111111111111111111111112" },
+  "x": { "state": "stated", "url": "https://x.com/playblock_test" },
+  "github": { "state": "stated", "url": "https://github.com/playblock-test/site" },
+  "marketSource": {
+    "state": "stated",
+    "boosts": "https://api.dexscreener.com/token-boosts/top/v1",
+    "tokens": "https://api.dexscreener.com/tokens/v1/solana/",
+    "pairs": "https://api.dexscreener.com/latest/dex/tokens/",
+    "pump": "https://frontend-api.pump.fun/coins/"
+  }
+}
